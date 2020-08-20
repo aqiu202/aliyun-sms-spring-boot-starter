@@ -1,4 +1,4 @@
-# sms-spring-boot-starter
+# aliyun-sms-spring-boot-starter
 ### 描述
 &emsp;&emsp;阿里云短信服务的封装 
 
