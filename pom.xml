@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.3.RELEASE</version>
+        <relativePath/>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.aqiu202.aliyun</groupId>
+    <artifactId>aliyun-sms-spring-boot-starter</artifactId>
+    <version>0.0.1</version>
+    <packaging>jar</packaging>
+    <name>aliyun-sms-spring-boot-starter</name>
+    <url>https://github.com/aqiu202/aliyun-sms-spring-boot-starter</url>
+    <description>The Simple AliYun SMS Service starter for Spring Boot</description>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/aqiu202/aliyun-sms-spring-boot-starter</url>
+        <connection>https://github.com/aqiu202/aliyun-sms-spring-boot-starter.git</connection>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>aqiu</name>
+            <id>aqiu</id>
+            <email>aqiuqiuweb@163.com</email>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+
+    <properties>
+        <aliyun-sdk-core.version>4.5.7</aliyun-sdk-core.version>
+        <aliyun-sdk-sms.version>2.1.0</aliyun-sdk-sms.version>
+        <sms-api.version>0.0.1</sms-api.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>${aliyun-sdk-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
+            <version>${aliyun-sdk-sms.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.aqiu202.api</groupId>
+            <artifactId>sms-api</artifactId>
+            <version>${sms-api.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>
